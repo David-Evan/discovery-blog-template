@@ -1,0 +1,39 @@
+/*----------------------------*\
+    CONFIG - config variables (colors, fonts ...) - mixins and sass functions ...
+\*----------------------------*/
+
+@import 'base/config';
+
+/*----------------------------*\
+    LIB - Externals library (e.g : Normalize)
+\*----------------------------*/
+
+@import 'lib/normalize';
+
+/*----------------------------*\
+    BASE
+\*----------------------------*/
+
+@import 'base/base';
+
+/*----------------------------*\
+    LAYOUT
+\*----------------------------*/
+
+@import 'layout/grid';
+
+/*----------------------------*\
+    MODULES
+\*----------------------------*/
+@import 'modules/header';
+@import 'modules/post';
+@import 'modules/sidebar';
+@import 'modules/cookies-alert';
+@import 'modules/pagination';
+@import 'modules/footer';
+
+/*----------------------------*\
+    RESPONSIVE
+\*----------------------------*/
+
+@import 'layout/responsive';
