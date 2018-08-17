@@ -18,13 +18,3 @@
 
     border-bottom: solid 1px $global_border_color;
 }
-
-
-/* Send Newsletter button*/
-.sidebar_mailing-send{
-  border-radius: 0 5px 5px 0;
-  &:hover{
-    background-color: $global_prim-color;
-    color: #fff;
-  }
-}

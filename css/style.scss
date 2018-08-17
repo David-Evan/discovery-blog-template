@@ -29,6 +29,7 @@
 @import 'modules/post';
 @import 'modules/sidebar';
 @import 'modules/cookies-alert';
+@import 'modules/buttons';
 @import 'modules/pagination';
 @import 'modules/footer';
 
@@ -37,3 +38,10 @@
 \*----------------------------*/
 
 @import 'layout/responsive';
+
+
+/*----------------------------*\
+    THEME
+\*----------------------------*/
+
+@import 'theme/colored';

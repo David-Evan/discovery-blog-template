@@ -24,12 +24,16 @@
     margin-top: 60px;
 }
 
-
-.mc_post:not(:first-child){
-    margin: 90px 0 90px 0;
+.mc_post-content-wrapper{
+    margin-top: 30px;
 }
 
-.mc_post-content-prev{
+.mc_post:not(:first-child){
+    margin: 90px 0 70px 0;
+}
+
+.mc_post-content
+{
     margin: 40px 0 35px 0;
 }
 

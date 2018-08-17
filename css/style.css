@@ -369,11 +369,11 @@ h1 {
 }
 
 h2 {
-    font-size: 1.8rem;
+    font-size: 2rem;
 }
 
 h3 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
 }
 
 h4 {
@@ -407,11 +407,15 @@ h4 {
     margin-top: 60px;
 }
 
-.mc_post:not(:first-child) {
-    margin: 90px 0 90px 0;
+.mc_post-content-wrapper {
+    margin-top: 30px;
 }
 
-.mc_post-content-prev {
+.mc_post:not(:first-child) {
+    margin: 90px 0 70px 0;
+}
+
+.mc_post-content {
     margin: 40px 0 35px 0;
 }
 
@@ -468,8 +472,24 @@ h4 {
     text-align: center;
 }
 
-.mc_post-content-prev {
+.mc_post-content {
     text-align: justify;
+}
+
+/* Complet POST Content */
+.mc_post-content.complet {
+    text-indent: 1.5rem;
+    line-height: 1.9rem;
+}
+
+.mc_post-content.complet p:not(:first-child) {
+    margin-top: 35px;
+}
+
+.mc_post-content.complet p:first-letter {
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 3px;
 }
 
 .mc_post-date {
@@ -479,19 +499,17 @@ h4 {
 
 .mc_post-picture img {
     max-width: 100%;
+    box-shadow: 7px 3px 12px rgba(0, 0, 0, 0.07);
 }
 
-.mc_post-readmore {
-    background-color: #fff;
-    border: solid 2px #3a3a3a;
-    height: 40px;
-    width: 200px;
-    cursor: pointer;
+.mc_post_comment-avatar,
+.mc_post_comment-footer {
+    text-align: center;
 }
 
-.mc_post-readmore:hover {
-    color: #939393;
-    border-color: #8f9aa7;
+.mc_post_comment-avatar img {
+    border: solid 1px #eee;
+    box-shadow: 7px 3px 12px rgba(0, 0, 0, 0.07);
 }
 
 .sidebar {
@@ -513,16 +531,6 @@ h4 {
     border-bottom: solid 1px #ddd;
 }
 
-/* Send Newsletter button*/
-.sidebar_mailing-send {
-    border-radius: 0 5px 5px 0;
-}
-
-.sidebar_mailing-send:hover {
-    background-color: #3a3a3a;
-    color: #fff;
-}
-
 .cookies-alert {
     position: fixed;
     bottom: 0;
@@ -536,6 +544,37 @@ h4 {
 
 .cookies-alert_links {
     color: #000;
+}
+
+/* Send Newsletter button*/
+.btn.collapse-right {
+    border-radius: 0 5px 5px 0;
+}
+
+.btn.collapse-right:hover {
+    background-color: #3a3a3a;
+    color: #fff;
+}
+
+/* Discret buttons */
+.light-btn {
+    background-color: #fff;
+    border: solid 2px #3a3a3a;
+    height: 40px;
+    width: 200px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.light-btn:hover {
+    color: #939393;
+    border-color: #8f9aa7;
+}
+
+.small-btn {
+    width: 115px;
+    font-size: 1rem;
+    height: 35px;
 }
 
 .pagination {
@@ -581,4 +620,29 @@ h4 {
     .container-fluid {
         width: 75%;
     }
+}
+
+/*----------------------------*\
+    THEME
+\*----------------------------*/
+h1, h3, a, .pagination .page-item {
+    color: #00697A;
+}
+
+a.alt-color {
+    color: #000;
+}
+
+a.alt-color:hover {
+    color: #00697A;
+}
+
+.pagination .page-item.active .page-link {
+    background-color: #00697A;
+    border-color: #00697A;
+}
+
+.light-btn:hover {
+    color: #00697A;
+    border-color: #00697A;
 }
