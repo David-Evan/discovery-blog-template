@@ -1,4 +1,37 @@
 
+/*----------------------------*\
+    UNDER MD (= SM + XS)
+\*----------------------------*/
+@media (max-width:991px){
+
+  /*------ COMMENTS ------*/
+  .mc_post_comment-author,
+  .mc_post_comment-date{
+      text-align: center;
+  }
+
+  .mc_post_comment-avatar{
+      margin-bottom: 20px;
+  }
+
+  .mc_post_comment-avatar,
+  .mc_post_comment-footer{
+    padding-top: 10px;
+  }
+
+  .mc_post_comment-footer hr{
+    display: block;
+  }
+
+  .mc_post_comment-content + hr{
+    display: none;
+  }
+}
+
+/*----------------------------*\
+    BOOTSTRAP FIX
+\*----------------------------*/
+
 /** Bootstrap FIX **/
 @media (min-width: 1000px){
   // Fix bootstrap container
