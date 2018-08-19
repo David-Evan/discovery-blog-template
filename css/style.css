@@ -643,6 +643,13 @@ legend {
     text-align: justify;
 }
 
+/** Success Icon **/
+.mc_post_comment-sucess-icon {
+    font-size: 4.5rem;
+    padding-bottom: 20px;
+    color: #939393;
+}
+
 .footer-copyright {
     text-align: center;
 }
@@ -731,7 +738,9 @@ legend {
 /*----------------------------*\
     THEME
 \*----------------------------*/
-h1, h3, a, .pagination .page-item {
+h1, h3, a,
+.pagination .page-item,
+.mc_post_comment-sucess-icon {
     color: #00697A;
 }
 

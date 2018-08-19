@@ -138,7 +138,7 @@
               <!-- Button (Double) -->
               <div class="form-group row">
                 <div class="add-comment-form_controls offset-md-4 col-md-9">
-                  <button id="cancelCommentBtn" type="submit" name="commentSubmit" class="btn btn-info">Envoyer</button>
+                  <button id="sendCommentBtn" type="submit" name="commentSubmit" class="btn btn-info">Envoyer</button>
                   <button id="cancelCommentBtn" type="reset" name="commentCancel" class="btn btn-default">Annuler</button>
                 </div>
               </div>
@@ -146,10 +146,35 @@
               </fieldset>
             </form>
           </div>
+
+
+          <div id="successCommentSendModal" class="modal fade" tabindex="-1" role="dialog">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title">Réaction publiée</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body text-center">
+                <div class="mc_post_comment-sucess-icon far fa-check-circle"></div>
+                <p>Votre réaction a bien été publiée.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+          <!-- Sucess - Send comment box -->
+          <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modalSucessComment" aria-hidden="true">
+            <div class="modal-dialog modal">
+              <div class="modal-content">
+                Votre réaction a été envoyé.
+              </div>
+            </div>
+          </div>
           <!--
           [END SECTION] - COMMENT BOX
           -->
-
           <!--
           [START SECTION] - COMMENTS
           -->

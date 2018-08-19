@@ -21,3 +21,10 @@
 .mc_post_comment-content{
   text-align: justify;
 }
+
+/** Success Icon **/
+.mc_post_comment-sucess-icon{
+    font-size: 4.5rem;
+    padding-bottom: 20px;
+    color: $global_md-text-color;
+}
